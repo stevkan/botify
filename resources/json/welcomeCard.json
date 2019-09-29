@@ -1,0 +1,57 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "Image",
+          "url": "https://botberg81bd.blob.core.windows.net/images/bot_192.png?st=2019-05-29T06%3A34%3A27Z&se=2029-05-30T06%3A34%3A00Z&sp=rl&sv=2018-03-28&sr=b&sig=Wy%2F%2FUnc7G3W3qgDZx68hFU2owTSVRUzH6zx58HvEIKU%3D",
+          "size": "stretch"
+        },
+        {
+          "type": "TextBlock",
+          "spacing": "medium",
+          "size": "default",
+          "weight": "bolder",
+          "text": "Botify",
+          "wrap": true,
+          "maxLines": 0,
+          "color": "accent",
+          "isSubtle": true
+        },
+        {
+          "type": "TextBlock",
+          "size": "default",
+          "text": "A Shopify experience powered by Microsoft's Bot Framework",
+          "wrap": true,
+          "maxLines": 0,
+          "color": "accent",
+          "isSubtle": true
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Learn more about Bot Framework",
+      "url": "https://docs.botframework.com"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Visit Shopify",
+      "url": "https://shopify.com"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Tryout Botify",
+      "data": {
+        "action": "startup botify"
+      }
+    }
+  ]
+}
